@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="95232381-5f10-4fd9-952d-b957ab1d2b5f"
+  name="PunModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction
+        Id="ad0ae6d9-371e-442d-9ca1-bd9116c9d052"
+        name="ProgramSequence"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="d2661b12-4a48-436e-b7e9-fce7a6976ca0"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="e3a0a03a-b75b-4e60-ad4d-9f827d471482"
+                LastKnownName="Process Texts"
+                LastKnownLocation="PunModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="e9e1a012-1d01-44d7-bafe-439216f29160"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="PunModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="bda95ca5-aa51-4713-b005-227367b23c11"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="PunModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="49bc17ad-3a5d-47c5-863c-7e52eb7da6c6"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="PunModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="bda95ca5-aa51-4713-b005-227367b23c11"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="4a33dff2-b7f8-45d6-9f72-2bf0bb5bde7e"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PunModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e3a0a03a-b75b-4e60-ad4d-9f827d471482"
+                LastKnownName="Process Texts"
+                LastKnownLocation="PunModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="340a65f3-fe67-45b4-b85e-37e63a111f37"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="153ec2c0-3041-45dc-8a02-965d455a4afc"
+                LastKnownName="Input one Latin and Multiple Greek texts"
+                LastKnownLocation="PunModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="49bc17ad-3a5d-47c5-863c-7e52eb7da6c6"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="e3a0a03a-b75b-4e60-ad4d-9f827d471482"
+                LastKnownName="Process Texts"
+                LastKnownLocation="PunModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="e9e1a012-1d01-44d7-bafe-439216f29160"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="23908204-36d1-4aec-ab3a-e7b2976e727c"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PunModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e3a0a03a-b75b-4e60-ad4d-9f827d471482"
+                LastKnownName="Process Texts"
+                LastKnownLocation="PunModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="3bcc9e10-7e8a-4e56-9a75-0f9ee8b82b60"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="e3a0a03a-b75b-4e60-ad4d-9f827d471482"
+                LastKnownName="Process Texts"
+                LastKnownLocation="PunModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="ef8e83da-2610-4f6b-bb8d-242fe5ee01a1"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="PunModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="20b50c55-09b5-4dbe-b81a-6d4c85cff996"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="PunModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="89490829-08c6-4550-a8ed-0fa424b4fbf3"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="PunModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="9a41ac9f-4d4c-402c-b51b-70015fc8d45e"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="PunModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="20b50c55-09b5-4dbe-b81a-6d4c85cff996"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="004e2706-0233-4cc0-b09b-a766ae12846c"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PunModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e3a0a03a-b75b-4e60-ad4d-9f827d471482"
+                LastKnownName="Process Texts"
+                LastKnownLocation="PunModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1c601454-d4ab-48d6-aed5-484599f13827"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="153ec2c0-3041-45dc-8a02-965d455a4afc"
+                LastKnownName="Input one Latin and Multiple Greek texts"
+                LastKnownLocation="PunModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="89490829-08c6-4550-a8ed-0fa424b4fbf3"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="e3a0a03a-b75b-4e60-ad4d-9f827d471482"
+                LastKnownName="Process Texts"
+                LastKnownLocation="PunModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9a41ac9f-4d4c-402c-b51b-70015fc8d45e"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="e3a0a03a-b75b-4e60-ad4d-9f827d471482"
+                LastKnownName="Process Texts"
+                LastKnownLocation="PunModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e672fad6-9ce2-4a09-bbe0-0475aa2fb182"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="153ec2c0-3041-45dc-8a02-965d455a4afc"
+                LastKnownName="Input one Latin and Multiple Greek texts"
+                LastKnownLocation="PunModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="ef8e83da-2610-4f6b-bb8d-242fe5ee01a1"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="db0dc697-9f25-4cfc-b123-b0193face640"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PunModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e3a0a03a-b75b-4e60-ad4d-9f827d471482"
+                LastKnownName="Process Texts"
+                LastKnownLocation="PunModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="153ec2c0-3041-45dc-8a02-965d455a4afc"
+            name="Input one Latin and Multiple Greek texts"
+            isActor="false"
+            lifelineDisplayName="Input one Latin and Multiple Greek texts">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="340a65f3-fe67-45b4-b85e-37e63a111f37"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="PunModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="1c601454-d4ab-48d6-aed5-484599f13827"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="PunModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="e672fad6-9ce2-4a09-bbe0-0475aa2fb182"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="PunModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="e3a0a03a-b75b-4e60-ad4d-9f827d471482"
+            name="Process Texts"
+            isActor="false"
+            lifelineDisplayName="Process Texts">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="bda95ca5-aa51-4713-b005-227367b23c11"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="PunModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="e9e1a012-1d01-44d7-bafe-439216f29160"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="PunModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="20b50c55-09b5-4dbe-b81a-6d4c85cff996"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="PunModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="ef8e83da-2610-4f6b-bb8d-242fe5ee01a1"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="PunModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="b80da240-e33b-4861-9203-515d0546c17e"
+            name="Message1"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="340a65f3-fe67-45b4-b85e-37e63a111f37"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="PunModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="49bc17ad-3a5d-47c5-863c-7e52eb7da6c6"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="PunModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="24972056-70bb-4e0b-b36b-67551f230ea9"
+            name="Message2"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="1c601454-d4ab-48d6-aed5-484599f13827"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="PunModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="89490829-08c6-4550-a8ed-0fa424b4fbf3"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="PunModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="3abc69ee-0f10-41d9-9d28-b49d4940e093"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9a41ac9f-4d4c-402c-b51b-70015fc8d45e"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="PunModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e672fad6-9ce2-4a09-bbe0-0475aa2fb182"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="PunModelingProject.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="4a33dff2-b7f8-45d6-9f72-2bf0bb5bde7e"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="23908204-36d1-4aec-ab3a-e7b2976e727c"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="004e2706-0233-4cc0-b09b-a766ae12846c"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="db0dc697-9f25-4cfc-b123-b0193face640"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="b71f186d-d9c5-4682-8b05-14f5a328e32a"
+        name="Program"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="3ee194ef-f654-412d-99df-fd48762a319b"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7bfc2201-758e-4417-867e-8c148b1706ac"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5f27931d-916e-410b-bf8c-84348076a0a3"
+                  LastKnownName="Input one Latin and one or more Greek texts in .txt format"
+                  LastKnownLocation="PunModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="5f27931d-916e-410b-bf8c-84348076a0a3"
+            name="Input one Latin and one or more Greek texts in .txt format"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4b5ec10f-ec0c-40e8-89cd-b0d6badda189"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="990b2a49-d589-4810-8c1f-5f268e6c5a7c"
+                  LastKnownName="Fork1"
+                  LastKnownLocation="PunModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="903703bf-6dc5-4365-a661-d3d778bf3150"
+            name="Convert Latin text to single line of lower-case text with no spaces where elided letters are removed"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="400bdf0f-16b9-4a7d-9ec3-b3d59fbcc2e3"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="5f8e4644-c7ce-4780-811c-ae1d5fb16229"
+                  LastKnownName="Join1"
+                  LastKnownLocation="PunModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode
+            Id="990b2a49-d589-4810-8c1f-5f268e6c5a7c"
+            name="Fork1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9c123258-58a4-409e-8ce3-7be42f4a44c5"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="903703bf-6dc5-4365-a661-d3d778bf3150"
+                  LastKnownName="Convert Latin text to single line of lower-case text with no spaces where elided letters are removed"
+                  LastKnownLocation="PunModelingProject.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="946d9b35-6cfb-4c09-9552-c962f2ef3762"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f7d487a8-7872-4cd0-8d1b-2649a1fb8c60"
+                  LastKnownName="Process Greek Texts to get a list of unique lower-case and Greek words greater than a specifed amount of letters without accents "
+                  LastKnownLocation="PunModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction
+            Id="f7d487a8-7872-4cd0-8d1b-2649a1fb8c60"
+            name="Process Greek Texts to get a list of unique lower-case and Greek words greater than a specifed amount of letters without accents "
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3d0916da-1d04-49b4-a0a3-f10468206b29"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="5f8e4644-c7ce-4780-811c-ae1d5fb16229"
+                  LastKnownName="Join1"
+                  LastKnownLocation="PunModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode
+            Id="5f8e4644-c7ce-4780-811c-ae1d5fb16229"
+            name="Join1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e88e80cb-5860-4401-8eca-d71e03bbd6f8"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="60854774-aa13-4bf8-827a-a15edefa3d82"
+                  LastKnownName="For every processed Greek word each letter (or letters in the case of a diphthong) is matched phonetically using an internal dictionary to the processed Latin text. This results in a list of locations in the Latin text where each Greek word was found"
+                  LastKnownLocation="PunModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction
+            Id="60854774-aa13-4bf8-827a-a15edefa3d82"
+            name="For every processed Greek word each letter (or letters in the case of a diphthong) is matched phonetically using an internal dictionary to the processed Latin text. This results in a list of locations in the Latin text where each Greek word was found"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="82a46746-a80d-474b-a64f-cc5ad1cef78c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f9b6a96d-fe15-4614-92c0-085d2735ed62"
+                  LastKnownName="The program outputs the original Latin text in a printable format where each location in the text (where an equivalence in the Greek text was found) is highlighted and the matching Greek words are shown on the same line"
+                  LastKnownLocation="PunModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="f9b6a96d-fe15-4614-92c0-085d2735ed62"
+            name="The program outputs the original Latin text in a printable format where each location in the text (where an equivalence in the Greek text was found) is highlighted and the matching Greek words are shown on the same line"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f261f737-5d12-4676-b824-ea2f3bd57b0a"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="03a72e61-4d8d-42ee-9e7b-e9a29414f048"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="PunModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="03a72e61-4d8d-42ee-9e7b-e9a29414f048"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="e6b9addc-f4f0-4487-8032-148c62ee7cad" name="Program" linkedPackageId="96f750ad-6226-44ac-9728-77a5b93c5ab8" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="8d92f242-c7e3-4f6e-9e9f-fe902d5c5412">
+      <profileInstance Id="fddda59e-561b-4cf8-b3f9-892e33f849b6" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="f8810b17-534d-464c-a30f-853c91ea13f4">
+      <profileInstance Id="0c0fb515-7cde-4ec4-b337-cf6753e21fbe" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="730cf5fd-938d-46e4-b5f4-ec67de54b910" name="Program" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="b71f186d-d9c5-4682-8b05-14f5a328e32a" />
+        <nodes>
+          <initialNode Id="1dae0d66-fd40-4ec9-98dd-f6a0582ff9f6" name="Initial1" isLeaf="false">
+            <elementDefinition Id="3ee194ef-f654-412d-99df-fd48762a319b" />
+            <flowNodeTargets>
+              <controlFlow Id="a7e47727-2894-4300-9452-af302b93f498" isLeaf="false">
+                <opaqueActionMoniker Id="3ab2a574-2bd8-4070-acbd-c380565f54e6" LastKnownName="Input one Latin and one or more Greek texts in .txt format" />
+                <elementDefinition Id="7bfc2201-758e-4417-867e-8c148b1706ac" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="3ab2a574-2bd8-4070-acbd-c380565f54e6" name="Input one Latin and one or more Greek texts in .txt format" isLeaf="false">
+            <elementDefinition Id="5f27931d-916e-410b-bf8c-84348076a0a3" />
+            <flowNodeTargets>
+              <controlFlow Id="7a95ce04-96be-42cc-b82d-9fe708e4f940" isLeaf="false">
+                <forkNodeMoniker Id="a862e508-e29e-47e5-b014-c26c8a63a1b9" LastKnownName="Fork1" />
+                <elementDefinition Id="4b5ec10f-ec0c-40e8-89cd-b0d6badda189" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="849a5860-4d28-410d-9f12-7c8928fabc6d" name="Convert Latin text to single line of lower-case text with no spaces where elided letters are removed" isLeaf="false">
+            <elementDefinition Id="903703bf-6dc5-4365-a661-d3d778bf3150" />
+            <flowNodeTargets>
+              <controlFlow Id="7228825a-ef59-4377-9ba4-519d269b1ee7" isLeaf="false">
+                <joinNodeMoniker Id="e0b3f1ab-510d-42d4-9b03-46742859296b" LastKnownName="Join1" />
+                <elementDefinition Id="400bdf0f-16b9-4a7d-9ec3-b3d59fbcc2e3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode Id="a862e508-e29e-47e5-b014-c26c8a63a1b9" name="Fork1" isLeaf="false">
+            <elementDefinition Id="990b2a49-d589-4810-8c1f-5f268e6c5a7c" />
+            <flowNodeTargets>
+              <controlFlow Id="72f5cac0-27da-4fc5-94f2-88178d109879" isLeaf="false">
+                <opaqueActionMoniker Id="849a5860-4d28-410d-9f12-7c8928fabc6d" LastKnownName="Convert Latin text to single line of lower-case text with no spaces where elided letters are removed" />
+                <elementDefinition Id="9c123258-58a4-409e-8ce3-7be42f4a44c5" />
+              </controlFlow>
+              <controlFlow Id="08af2565-6c9b-4cc5-8f15-112b71a66b0d" isLeaf="false">
+                <opaqueActionMoniker Id="b31f335d-a054-4d06-bd58-687822916ec5" LastKnownName="Process Greek Texts to get a list of unique lower-case and Greek words greater than a specifed amount of letters without accents " />
+                <elementDefinition Id="946d9b35-6cfb-4c09-9552-c962f2ef3762" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction Id="b31f335d-a054-4d06-bd58-687822916ec5" name="Process Greek Texts to get a list of unique lower-case and Greek words greater than a specifed amount of letters without accents " isLeaf="false">
+            <elementDefinition Id="f7d487a8-7872-4cd0-8d1b-2649a1fb8c60" />
+            <flowNodeTargets>
+              <controlFlow Id="f9ed32c9-3507-49a9-b504-da06fb14d172" isLeaf="false">
+                <joinNodeMoniker Id="e0b3f1ab-510d-42d4-9b03-46742859296b" LastKnownName="Join1" />
+                <elementDefinition Id="3d0916da-1d04-49b4-a0a3-f10468206b29" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode Id="e0b3f1ab-510d-42d4-9b03-46742859296b" name="Join1" isLeaf="false">
+            <elementDefinition Id="5f8e4644-c7ce-4780-811c-ae1d5fb16229" />
+            <flowNodeTargets>
+              <controlFlow Id="585b21ed-a634-458d-be82-6658aeea9c35" isLeaf="false">
+                <opaqueActionMoniker Id="52f95ed0-1243-4151-99bc-5d13359adaf8" LastKnownName="For every processed Greek word each letter (or letters in the case of a diphthong) is matched phonetically using an internal dictionary to the processed Latin text. This results in a list of locations in the Latin text where each Greek word was found" />
+                <elementDefinition Id="e88e80cb-5860-4401-8eca-d71e03bbd6f8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction Id="52f95ed0-1243-4151-99bc-5d13359adaf8" name="For every processed Greek word each letter (or letters in the case of a diphthong) is matched phonetically using an internal dictionary to the processed Latin text. This results in a list of locations in the Latin text where each Greek word was found" isLeaf="false">
+            <elementDefinition Id="60854774-aa13-4bf8-827a-a15edefa3d82" />
+            <flowNodeTargets>
+              <controlFlow Id="2c021f21-17a4-4b58-baba-4d9e4898ba2e" isLeaf="false">
+                <opaqueActionMoniker Id="b6c68ab4-d60d-4a6c-ae18-e2d081c7942a" LastKnownName="The program outputs the original Latin text in a printable format where each location in the text (where an equivalence in the Greek text was found) is highlighted and the matching Greek words are shown on the same line" />
+                <elementDefinition Id="82a46746-a80d-474b-a64f-cc5ad1cef78c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="b6c68ab4-d60d-4a6c-ae18-e2d081c7942a" name="The program outputs the original Latin text in a printable format where each location in the text (where an equivalence in the Greek text was found) is highlighted and the matching Greek words are shown on the same line" isLeaf="false">
+            <elementDefinition Id="f9b6a96d-fe15-4614-92c0-085d2735ed62" />
+            <flowNodeTargets>
+              <controlFlow Id="5925626b-dc21-4c77-a472-30d31ea0193a" isLeaf="false">
+                <activityFinalNodeMoniker Id="e743ea9e-2b84-4a7f-8f36-75d00d4d900f" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="f261f737-5d12-4676-b824-ea2f3bd57b0a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="e743ea9e-2b84-4a7f-8f36-75d00d4d900f" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="03a72e61-4d8d-42ee-9e7b-e9a29414f048" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="96f750ad-6226-44ac-9728-77a5b93c5ab8" name="PunModelingProject">
+    <elementDefinition Id="95232381-5f10-4fd9-952d-b957ab1d2b5f" />
+  </package>
+</activityRootModel>

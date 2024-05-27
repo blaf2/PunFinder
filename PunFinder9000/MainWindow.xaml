@@ -1,0 +1,58 @@
+﻿<Window x:Class="PunFinder9000.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Pun Finder" Height="540" Width="450">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="24"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="32"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="32"/>
+        </Grid.ColumnDefinitions>
+        <!--<Menu HorizontalAlignment="Right" Grid.Row="0">
+            <MenuItem Header="Item1">Item1</MenuItem>
+        </Menu>-->
+        <StackPanel Grid.Row="0" Grid.Column="1" Margin="0,4,0,8">
+            <TextBlock x:Name="uxStatusMessage1"  HorizontalAlignment="Left"/>
+            <TextBlock x:Name="uxStatusMessage2"  HorizontalAlignment="Left"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2">
+            <TextBlock>Original Latin Text</TextBlock>
+            <StackPanel Orientation="Horizontal" >
+                <TextBox x:Name="uxOriginalText" Width="300" IsReadOnly="True"/>
+                <Button Content="Browse..." Click="OriginalFileBrowse_Click" Margin="4,0,0,0" Height="22" VerticalAlignment="Top"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal" Grid.ColumnSpan="2" Margin="0,4">
+            <RadioButton x:Name="greekRadio" IsChecked="True" Content="Greek" Checked="Greek_Checked" Padding="4,0,12,0"/>
+            <RadioButton x:Name="latinRadio" Content="Latin" Checked="Latin_Checked"/>
+            <CheckBox x:Name="reverseOriginalText" Content="Reverse Original Text" Margin="66,0" VerticalAlignment="Bottom"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2">
+            <TextBlock x:Name="uxRefTextLabel">Greek Reference Texts</TextBlock>
+            <StackPanel Orientation="Horizontal" >
+                <ListBox x:Name="uxReferenceTexts" Width="300" SelectionMode="Extended" KeyUp="uxReferenceTexts_KeyUp"/>
+                <Button Content="Browse..." Click="ReferenceTextsBrowse_Click" Margin="4,0,0,0" Height="22" VerticalAlignment="Top"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Horizontal">
+            <TextBlock Margin="4" Padding="2">Minimum Word Length: </TextBlock>
+            <TextBox x:Name="uxMinWordLengthTextBox" Width="40" Margin="4" Text="4"></TextBox>
+            <TextBlock Margin="4" Padding="2">Suffix Length:</TextBlock>
+            <TextBox x:Name="uxSuffixTextBox" Width="40" Margin="4" Text="0"></TextBox>
+        </StackPanel>
+        <Button x:Name="uxStartButton" Grid.Row="6" Grid.Column="1" Content="Start" Click="Start_Click"/>
+        <DataGrid x:Name="uxResultGrid" Grid.Row="7" Width="360" MaxHeight="250" Grid.Column="1" Margin="0,8" RowHeight="20" ColumnWidth="180" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True" AutoGenerateColumns="True">
+            
+        </DataGrid>
+    </Grid>
+</Window>
